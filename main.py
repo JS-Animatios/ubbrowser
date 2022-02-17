@@ -6,7 +6,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtWebEngineWidgets import *
 
-def main():
+def browser():
     class MainWindow(QMainWindow):
         def __init__(self):
             super(MainWindow, self).__init__()
@@ -57,6 +57,4 @@ def main():
     QApplication.setApplicationName('UB Browser')
     window = MainWindow()
     app.exec_()
-if __name__ =='__name__':
-    main()
-start_server(main, port=8080, debug=True)
+start_server(browser, port=8080, debug=True)

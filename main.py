@@ -57,4 +57,5 @@ def browser():
     QApplication.setApplicationName('UB Browser')
     window = MainWindow()
     app.exec_()
-start_server(browser, port=8080, debug=True)
+    
+browser()
